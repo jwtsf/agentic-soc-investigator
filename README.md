@@ -36,6 +36,14 @@ GROQ_API_KEY=your_actual_api_key_here
 streamlit run app.py
 ```
 
+The final threat report will be available on the dashboard:
+<img width="961" height="512" alt="image" src="https://github.com/user-attachments/assets/3b8b0f75-f3b1-490c-bc34-7fa233e2025c" />
+
+Further decisions can be made post-report
+<img width="961" height="1058" alt="image" src="https://github.com/user-attachments/assets/9558be1c-30a7-4be0-a8cd-c7c71f9aa4dd" />
+
+
+
 ### 5. Evaluateing agents 
 
 ```bash
