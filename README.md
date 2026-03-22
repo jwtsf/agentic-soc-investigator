@@ -39,8 +39,9 @@ streamlit run app.py
 The final threat report will be available on the dashboard:
 <img width="961" height="512" alt="image" src="https://github.com/user-attachments/assets/3b8b0f75-f3b1-490c-bc34-7fa233e2025c" />
 
-Further decisions can be made post-report
-<img width="961" height="1058" alt="image" src="https://github.com/user-attachments/assets/9558be1c-30a7-4be0-a8cd-c7c71f9aa4dd" />
+Further decisions can be made post-report:
+<img width="961" height="494" alt="image" src="https://github.com/user-attachments/assets/1b57d1d0-9d99-45b3-a6d5-63bc97bdedaf" />
+
 
 
 
