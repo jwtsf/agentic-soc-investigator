@@ -1,0 +1,23 @@
+investigate_alert_task:
+  description: >
+    Review the following alert data: {alert}.
+    1. Extract the key indicators (IPs, usernames, file names).
+    2. Use the SOC Playbook Search tool to find relevant procedures or past incidents.
+    3. Draft an initial investigation report detailing your findings and a preliminary conclusion.
+  expected_output: >
+    A structured markdown report detailing the indicators, playbook matches, and a preliminary threat assessment.
+  agent: investigator
+
+review_investigation_task:
+  description: >
+    Review the L1 Analyst's report. 
+    1. Check if they followed playbook procedures.
+    2. Assess the risk level of the alert.
+    3. Output a final verdict. If you are not 100% sure, or if the threat is severe, you must output "ESCALATE".
+  expected_output: >
+    A final markdown evaluation containing:
+    - Summary of Findings
+    - Critique of the L1 Investigation
+    - Confidence Score (0-100)
+    - Escalation Decision (ESCALATE or RESOLVE)
+  agent: critic

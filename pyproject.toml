@@ -1,0 +1,30 @@
+[project]
+name = "soc_investigator"
+version = "0.1.0"
+description = "soc_investigator using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "chromadb>=1.1.1",
+    "crewai-tools>=1.10.1",
+    "crewai[litellm,tools]==1.10.1",
+    "langchain>=1.2.12",
+    "langchain-community>=0.4.1",
+    "sentence-transformers>=5.3.0",
+    "streamlit>=1.55.0",
+]
+
+[project.scripts]
+soc_investigator = "soc_investigator.main:run"
+run_crew = "soc_investigator.main:run"
+train = "soc_investigator.main:train"
+replay = "soc_investigator.main:replay"
+test = "soc_investigator.main:test"
+run_with_trigger = "soc_investigator.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
